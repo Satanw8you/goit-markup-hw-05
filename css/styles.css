@@ -574,7 +574,7 @@ header .container {
 }
 
 .modal-button:hover .modal-icon,
-.modal-button:focus .modal-icon:focus {
+.modal-button:focus .modal-icon {
   fill: #ffffff;
 }
 
