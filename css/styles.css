@@ -514,3 +514,7 @@ header .container {
   border: none;
   border-radius: 4px;
 }
+
+.footer-button .footer-icon {
+  margin-left: 16px;
+}
