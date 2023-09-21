@@ -185,6 +185,7 @@ header .container {
 .title-conteiner-button:hover,
 .title-conteiner-button:focus {
   background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Strategy tasks area */
@@ -522,10 +523,18 @@ header .container {
 .footer-button:focus,
 .footer-button:hover {
   background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Modal form */
 
 .backdrop {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
   position: fixed;
   top: 0;
   left: 0;
@@ -697,8 +706,7 @@ header .container {
   color: #4d5ae5;
 }
 
-.form-link:hover,
-.form-link:focus {
+.form-link {
   text-decoration: underline;
 }
 
@@ -722,4 +730,12 @@ header .container {
 .form-button:focus,
 .form-button:hover {
   background-color: #404bbf;
+}
+
+.form-textarea::placeholder,
+.modal-input {
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
